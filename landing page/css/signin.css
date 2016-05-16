@@ -1,0 +1,132 @@
+/*signin.css*/
+.form-signin {
+  max-width: 250px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.btn-signin-user{
+  position: relative;
+  overflow:hidden;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background:linear-gradient(
+	  rgba(0, 0, 0, 0.5),
+	  rgba(0, 0, 0, 0.5)
+	),
+	url(/images/qlikadmin.jpg);
+  background-size:cover;
+}
+.btn-signin-user h2{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+.btn-signin-user h3{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  margin: 0;
+  color: white;
+  font-size: 16px;
+}
+.btn-signin-user h6{
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+}
+.btn-signin-user span {
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+.btn-signin-user:before {/* :before */
+	content: attr(data-hover);
+	position: absolute;
+	top: 0.67em;
+	left: 0;
+	width: 100%;
+	padding-top:30px;
+	font-size: 28px;
+	text-align: center;
+	color: white;
+	opacity: 0;
+	-webkit-transition: .2s,opacity .3s;
+	-moz-transition: .2s,opacity .3s;
+	-o-transition: .2s,opacity .3s;
+	transition: .2s,opacity .3s;
+	-webkit-transform: translate(-150%,50%);
+	-moz-transform: translate(-150%,0);
+	-ms-transform: translate(-150%,0);
+	-o-transform: translate(-150%,0);
+	transform: translate(-150%,0);
+}
+.btn-signin-user:hover span{/* Span on :hover */
+	opacity: 0;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	-ms-transform: scale(0.3);
+	-o-transform: scale(0.3);
+	transform: scale(0.3);
+}
+.btn-signin-user:hover:before{/*  We show :before pseudo-element on :hover*/
+	opacity: 1;
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	transform: translate(0,0);
+	-webkit-transition-delay: .2s;
+	-moz-transition-delay: .2s;
+	-o-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.btn-signin-user:hover{
+  color:#000;
+  background-color:rgba(0,0,0,.5);
+}
+
+.btn-signin-options{
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+  padding: 2px;
+  font-size: 12px;
+  
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #60a628;
+  border: 1px solid #408406;
+
+}
+.btn-signin-options:hover{
+  background-color: #509517;
+}
+.btn-signin-options.active {
+  box-shadow: none; /* Prevent active button behavior */
+  color: #fff;
+  background-color: #286090;
+  border: 1px solid #204d74;
+}

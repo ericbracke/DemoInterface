@@ -1,0 +1,29 @@
+{
+  "name": "brackedemo",
+  "version": "1.0.0",
+  "description": "A node based web application for accessing Qlik Sense through a bootstrap interface.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bluebird": "^3.3.3",
+    "express": "^4.13.4",
+    "extend": "^3.0.0",
+    "fs": "^0.0.2",
+    "path": "^0.12.7",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "bracke",
+    "demo",
+    "qlik2go",
+    "qlik",
+    "sense"
+  ],
+  "author": "Eric Bracke",
+  "license": "ISC"
+}

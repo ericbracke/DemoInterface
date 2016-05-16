@@ -1,0 +1,306 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Qlik Demo Interface</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/demo.interface.css" rel="stylesheet">
+
+    <!-- signin.css for this html file -->
+    <link href="css/signin.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Qlik Demo</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="/index">Home</a></li>
+                  <li class="active"><a href="/signin">Login</a></li>
+                  <li><a href="/contributors">Contributors</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+              <form id="login_form" method="post" class="form-signin">
+                
+                <!-- User Select Button -->
+                <button id="btnUserSel" type="button" class="btn btn-block btn-signin-user" data-hover="Select User" data-toggle="modal" data-target="#mdlUserSel">
+                  <span>
+                    <h2>Administrator</h2>
+                    <h6>qlikadmin</h6>
+                    <h3>Administrator</h3>
+                  </span>
+                </button>
+                
+                <!-- User Select Modal -->
+                <div class="modal fade" id="mdlUserSel" tabindex="-1" role="dialog" aria-labelledby="mdlUserSelLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select User</h4>
+                      </div>
+                      <div class="modal-body">
+
+                        <table id="tblLogin" class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Name</th>
+                              <th>Role</th>
+                              <th>Login</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr id="l_bjork">
+                                <td><img height=40 src="images/l_bjork.jpg"></td>
+                                <td>Lars Bj&ouml;rk</td>
+                                <td>CEO</td>
+                                <td>
+                                  <span class="label label-success">Exec Dash</span>
+                                </td>
+                            </tr>
+                            <tr id="t_maccarrick">
+                                <td><img height=40 src="images/t_maccarrick.jpg"></td>
+                                <td>Tim MacCarrick</td>
+                                <td>CFO</td>
+                                <td>
+                                  <span class="label label-success">Exec Dash</span>
+                                </td>
+                            </tr>
+                            <tr id="r_timperlake">
+                                <td><img height=40 src="images/r_timperlake.jpg" /></td>
+                                <td>Richard Timperlake</td>
+                                <td>SVP Sales</td>
+                                <td>
+                                  <span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="e_johnson">
+                                <td><img height=40 src="images/e_johnson.jpg" /></td>
+                                <td>Eric Johnson</td>
+                                <td>President - Sales Americas</td>
+                                <td>
+                                  <span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="x_oleron">
+                                <td><img height=40 src="images/x_oleron.jpg" /></td>
+                                <td>Xavier Oleron</td>
+                                <td>VP Customer Support</td>
+                                <td>
+                                  <span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="e_bracke">
+                                <td><img height=40 src="images/e_bracke.jpg" /></td>
+                                <td>Eric Bracke</td>
+                                <td>Director - Supply Chain</td>
+                                <td>
+                                  <span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="d_adams">
+                                <td><img height=40 src="images/d_adams.jpg" /></td>
+                                <td>Diane Adams</td>
+                                <td>CPO</td>
+                                <td>
+                                  <span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="a_small">
+                                <td><img height=40 src="images/a_small.jpg" /></td>
+                                <td>Arlyn Small</td>
+                                <td>VP Human Resources USA</td>
+                                <td>
+                                  <span class="label label-info">QMC</span><span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="qlikadmin">
+                                <td><img height=40 src="images/qlikadmin.jpg" /></td>
+                                <td>Administrator</td>
+                                <td>IT System Admin</td>
+                                <td>
+                                  <span class="label label-info">QMC</span><span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                            <tr id="demo">
+                                <td><img height=40 src="images/demo.jpg"></td>
+                                <td>Demo</td>
+                                <td>Access to Other Demos</td>
+                                <td>
+                                  <span class="label label-info">QMC</span><span class="label label-primary">Hub</span>
+                                </td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                          </tfoot>
+                        </table>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Login Option (buttons) -->
+                <div id="loginOptions" class="btn-group btn-group-justified" role="group">
+                  <div class="btn-group" role="group">
+                    <button id="btn_qmc" type="button" name="qmc" class="btn btn-signin-options" role="group" onclick="DoLogin('/login/qmc');">QMC</button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button id="btn_hub" type="button" name="hub" class="btn btn-signin-options" role="group" onclick="DoLogin('/login/hub');">Hub</button>
+                  </div>
+                </div>
+                  
+              </form>
+
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Demo Interface for <a href="http://qlik.com">Qlik</a>, by <a href="https://www.linkedin.com/in/ericbracke">Eric Bracke</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery.min.js"><\/script>')</script>
+    <script src="lib/js.cookie.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="lib/ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Login user select
+    ================================================== -->
+    <script>
+    
+        var userInfo;
+        
+        $(function () {
+
+            userInfo = Cookies.getJSON("DemoInterface_UserInfo");
+            if(userInfo) {
+                // Set up Login Screen
+                SetUserLogin();
+            } 
+            
+            $("#tblLogin tr").click(function (e) {
+                
+                // Pull user credentials
+                var userid = $(this).attr("id");
+                var name   = $(" > td:nth-child(2)", this).html();
+                var role   = $(" > td:nth-child(3)", this).html();
+                
+                // Pull LoginOptions - 1=Hub Only, 2=Hub/Qmc, 3=Exec Dash
+                var loginoptions=1;
+                if($('> td > span:contains(Exec Dash)', this).length > 0) {
+                  loginoptions=3;
+                } else if ($('> td > span:contains(QMC)', this).length > 0){
+                  loginoptions=2;
+                } else {
+                  loginoptions=1;
+                }
+          
+                // Store userInfo
+                userInfo = {
+                  userId: userid,
+                  name: name,
+                  role: role,
+                  loginOptions: loginoptions
+                };
+                
+                // Store cookie to remember userInfo
+                Cookies.set("DemoInterface_UserInfo", userInfo, { expires : 5 } );
+
+                // Set up Login Screen
+                SetUserLogin();
+
+                // Close Modal
+                $('#mdlUserSel').modal('hide');
+                
+            });
+            
+        });
+        
+        function SetUserLogin() {
+          
+          // Display "user select" button - with current credentials
+          $('#btnUserSel').html("<span><h2>"+ userInfo.name +"</h2><h6>"+ userInfo.userId +"</h6><h3>"+ userInfo.role +"</h3></span>");
+          $('#btnUserSel').css("background","linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/images/"+ userInfo.userId +".jpg')");
+          $('#btnUserSel').css("background-size","cover");
+          
+          // Set login options
+          switch(userInfo.loginOptions){
+            
+            // Go to Hub ONLY
+            case 1:
+              $('#loginOptions').html('<div class="btn-group" role="group"><button id="btn_hub" type="button" name="hub" class="btn btn-signin-options" role="group" onclick="DoLogin(\'/login/hub\');">Hub</button></div>');
+              break;
+            
+            // Go to QMC or Hub
+            case 2:
+              $('#loginOptions').html('<div class="btn-group" role="group"><button id="btn_qmc" type="button" name="qmc" class="btn btn-signin-options" role="group" onclick="DoLogin(\'/login/qmc\');">QMC</button></div><div class="btn-group" role="group"><button id="btn_hub" type="button" name="hub" class="btn btn-signin-options" role="group" onclick="DoLogin(\'/login/hub\');">Hub</button></div>');
+              break;
+            
+            // Go to Exec Dashboard ONLY
+            case 3:
+              $('#loginOptions').html('<div class="btn-group" role="group"><button id="btn_exec" type="button" name="exec" class="btn btn-signin-options" onclick="DoLogin(\'/login/pinit\');">Executive Dashboard</button></div>');
+              break;
+            
+            // Go to Hub ONLY
+            default:
+              $('#loginOptions').html('<div class="btn-group" role="group"><button id="btn_hub" type="button" name="hub" class="btn btn-signin-options" role="group" onclick="DoLogin(\'/login/hub\');">Hub</button></div>');
+          }
+          
+        };
+        
+        function DoLogin(location) {
+          if(!userInfo) {
+              userInfo = {userId: 'qlikadmin',name: 'Administrator', role: 'Administrator', loginOptions : 2};
+          }
+          
+          $.post(location, userInfo)
+          .done(function(result)
+          {
+              //alert(result);
+              window.location.href = result;
+          });
+        };
+    
+    </script>
+  </body>
+</html>

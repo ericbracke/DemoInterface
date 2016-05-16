@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Qlik Demo Interface</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/demo.interface.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Qlik Demo</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="/index">Home</a></li>
+                  <li><a href="/signin">Login</a></li>
+                  <li class="active"><a href="/contributors">Contributors</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+		  
+            <div class="row">
+            
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                  <img src="images/qlik2go.jpg" alt="Qlik2Go" class="img-rounded">
+                  <div class="caption">
+                    <h3>Qlik2Go Team</h3>
+                    <p>The Qlik2Go (originally Core Demo Platform: David Freriks, Jason Yeung, David Pickering, Eric Bracke) team built a common data set, data model and applications using the Qlik Sense product (seen here) to illustrate a comprehensive Sense deployment.</p>
+                    <!--<p><a onclick="$('#alertContact').show()" href="javascript:void(0);" class="btn btn-primary" role="button">Button</a>-->
+                  </div>
+                </div>
+              </div>
+              <div id="Contributor" class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                  <img src="images/bracke.jpg" alt="Eric Bracke" class="img-rounded">
+                  <div class="caption">
+                    <h3>Eric Bracke</h3>
+                    <p>This demo interface concept was an idea I had to show a seamless integration of Qlik sense security and governance in an enterprise-like deployment.</p>
+                    <!--<p><a onclick="$('#alertContact').show()" href="javascript:void(0);" class="btn btn-primary" role="button">Button</a>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                  <img src="images/goldberg.jpg" alt="Jeffrey Goldberg" class="img-rounded">
+                  <div class="caption">
+                    <h3>Jeffrey Goldberg</h3>
+                    <p>Jeff is the mastermind behind most of the security concepts shown here. Along with David Freriks the user impersonation work was completed and re-purposed here. See <a href="https://www.youtube.com/playlist?list=PLW1uf5CQ_gSpUIEWu0-0TzzEaNVQo346i" target="_blank">basic setup</a> videos and a more <a href="https://drive.google.com/file/d/0BxBEVQthCb29ZjVXVEZpQUtOZk0/view?usp=sharing" target="_blank">complex security setup</a>.</p>
+                    <!--<p><a onclick="$('#alertContact').show()" href="javascript:void(0);" class="btn btn-primary" role="button">Button</a>-->
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+			<!--
+            <div class="row">
+              <div id="alertContact" class="alert alert-danger alert-dismissible fade in" role="alert" hidden>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Ha! I can't have everyone contacting the contributors all the time!
+              </div>
+            </div>
+			-->
+				
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Demo Interface for <a href="http://qlik.com">Qlik</a>, by <a href="https://www.linkedin.com/in/ericbracke">Eric Bracke</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+    $('#alertContact').on('closed.bs.alert', function () {
+  // do something…
+})
+    </script>
+  </body>
+</html>
